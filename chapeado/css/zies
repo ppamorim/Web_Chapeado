@@ -1,0 +1,137 @@
+#Header {
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+#Wrap {
+	width: 90%;
+	margin-left: 10%;
+}
+
+#Banner {
+	width: 100%;
+}
+
+#Slider {
+	width: 100%;
+}
+
+#Slider_Text {
+	width: 50%;
+}
+
+#imageBanner {
+	width: 50%;
+}
+
+#Content {
+	padding-top: 200px; 
+	width: 100%;
+}
+
+#Phone {
+	padding-top: 10px;
+	padding-right: 60px;
+}
+
+#Products {
+ 	width: 50%;
+ 	padding-left: 48px;
+ 	padding-bottom: 48px;
+}
+
+.imageProduct {
+	width: 40%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#wrapContact {
+	width: 50%;
+	margin-left: 5%;
+	padding: 32px;
+}
+
+#ContactInfo {
+	width: 50%;
+}
+
+.ItemContact {
+	padding: 30px;
+}
+
+.imageContact {
+	height: 100%;
+	max-height: 100px;
+}
+
+h1 {
+	width: 30%;
+	font-size: 20px;
+	margin-top: 0px;
+ 	margin-right: 0px;
+ 	margin-bottom: 48px;
+ 	margin-left: 0px;
+ 	padding-left: 160px;
+ 	padding-top: 20px;
+ 	padding-right: 20px;
+ 	padding-bottom: 20px;
+ }
+
+ h1#slider {
+ 	padding-left: 160px;
+ 	font-size: 30px;
+ }
+
+ h1.contact {
+ 	margin-top: 0px;
+ 	margin-right: 0px;
+ 	margin-bottom: 0px;
+ 	margin-left: 0px;
+ 	padding-top: 10px;
+ 	padding-right: 10px;
+ 	padding-left: 40px;
+ 	line-height: 60px;
+ }
+
+ h2 {
+ 	font-size: 18px;
+
+ }
+
+ h3 {
+	padding-left: 160px;
+	font-size: 60px;
+	margin-top: 0px;
+ 	margin-right: 0px;
+ 	margin-bottom: 0px;
+ 	margin-left: 0px;
+ }
+
+ h3#banner {
+ 	width: 100%;
+ 	padding-left: 160px;
+ 	padding-right: 160px;
+ 	padding-top: 160px;
+	font-size: 80px;
+ }
+
+ h3#bannerMessage {
+	padding-left: 160px;
+ 	padding-right: 160px;
+ 	padding-top: 20px;
+	font-size: 80px;
+ }
+
+ h3.about {
+	width: 100%;
+ 	padding-top: 64px;
+	padding-bottom: 64px;
+ }
+
+ h3.contact {
+	width: 100%;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+ }

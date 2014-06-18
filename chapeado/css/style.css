@@ -1,64 +1,74 @@
 @charset "utf-8";
 
-@font-face
-{
+@font-face {
 font-family: bebas;
-src: url(../BEBAS.ttf);
+src: url(../fonts/bebas.ttf) format("truetype");
 }
 
-@font-face
-{
+@font-face {
 font-family: opensans;
-src: url(../OpenSans.ttf);
+src: url(../fonts/OpenSans.ttf) format("truetype");
 }
+
+html { overflow-y: scroll; }
 
 body {
-	
 	background: #000;
  	margin-top: 0px;
  	margin-right: 0px;
  	margin-bottom: 0px;
  	margin-left: 0px;
  	background-size: 100%;
- 	background:url(../image/background.jpg)  no-repeat center center fixed; 
+ 	background:#000 url(../image/background.jpg)  no-repeat center center fixed; 
  	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
 #Header {
-
 	width: 100%;
 	background: #000;
 	padding-bottom: 30px;
 	padding-top: 30px;
 	padding-left: auto;
 	padding-right: auto;
-
+	position: fixed;
 }
 
 #Wrap {
-	width: 80%;
-	margin-left: auto;
+	width: 90%;
+	margin-left: 10%;
     margin-right: auto;
 }
 
 #Banner {
-
 	width: 100%;
 	background:url(../image/wood.jpg);
 	background-repeat: no-repeat;
+}
 
+#Slider {
+	width: 100%;
+	overflow: hidden;
+}
+
+#Slider_Text {
+	width: 50%;
+	float: left;
+}
+
+#imageBanner {
+	width: 50%;
+	float: left;
 }
 
 #Content {
-
+	padding-top: 200px; 
 	width: 100%;
 }
 
-.Message {
+#container_about {
 	background: url(../image/wood.jpg);
 	background-repeat: repeat;
 	min-height: 500px;
@@ -68,49 +78,68 @@ body {
 	overflow: hidden;
 }
 
-#Products {
+#Phone {
+	float: right;
+	padding-top: 10px;
+	padding-right: 60px;
+}
 
+#Products {
  	float: right;
  	width: 50%;
  	padding-left: 48px;
  	padding-bottom: 48px;
-
 }
 
 .imageProduct {
-		width: 40%;
-		float: left;
-		margin: 5px;
+	width: 40%;
+	float: left;
+	margin-left: 2%;
+	margin-right: 2%;
 }
 
-#Contact {
+#wrapContact {
+	width: 50%;
+	margin-left: 5%;
+	padding: 32px;
+	overflow: hidden;
+	background: #000;
+}
 
+#container_contact {
 	background: url(../image/towel.jpg);
 	background-repeat: repeat;
+	min-height: 1000px;
 	-webkit-box-shadow: 0px -5px 7px 0px rgba(50, 50, 50, 0.80);
 	-moz-box-shadow:    0px -5px 7px 0px rgba(50, 50, 50, 0.80);
 	box-shadow:         0px -5px 7px 0px rgba(50, 50, 50, 0.80);
 	overflow: hidden;
-
 }
 
 #ContactInfo {
-
-	width: 60%;
-	background: url(../image/transparency.png);
+	width: 50%;
+	float: left;
 	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
+	
+}
+
+.ItemContact {
+	overflow: hidden;
+	padding: 30px;
+}
+
+.imageContact {
+	height: 100%;
+	max-height: 100px;
+	float: left;
 
 }
 
 h1 {
-
 	width: 30%;
 	float: left;
 	text-align: left;
 	color: #FFF;
-	background: url(../image/transparency.png);
 	font-size: 20px;
 	font-family: opensans;
 	margin-top: 0px;
@@ -122,31 +151,36 @@ h1 {
  	padding-right: 20px;
  	padding-bottom: 20px;
  	text-align: justify;
- 	line-height: 
  }
 
-h2 {
+ h1#slider {
+ 	padding-left: 160px;
+ 	background: 0;
+ 	font-size: 30px;
+ }
 
-	float: left;
-	padding: 160px;
-	text-align: left;
-	font-size: 80px;
-	color: #efc818;
-	font-family: bebas;
-	margin-top: 0px;
+ h1.contact {
+ 	float: left;
+ 	margin-top: 0px;
  	margin-right: 0px;
  	margin-bottom: 0px;
  	margin-left: 0px;
- 	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.20);
+ 	padding-top: 10px;
+ 	padding-right: 10px;
+ 	padding-left: 40px;
+ 	line-height: 60px;
+ }
+
+ h2 {
+ 	text-align: right;
+ 	font-size: 18px;
+ 	color: #efc818;
+	font-family: bebas;
+
  }
 
  h3 {
-
- 	width: 100%;
- 	float: left;
 	text-align: left;
-	padding-top: 64px;
-	padding-bottom: 64px;
 	padding-left: 160px;
 	font-size: 60px;
 	color: #efc818;
@@ -156,26 +190,43 @@ h2 {
  	margin-bottom: 0px;
  	margin-left: 0px;
  	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.20);
-
  }
 
- h4 {
-
-	width: 100%; 
+ h3#banner {
  	float: left;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 160px;
+ 	width: 100%;
+ 	font-family: bebas;
+ 	padding-left: 160px;
+ 	padding-right: 160px;
+ 	padding-top: 160px;
 	text-align: left;
 	font-size: 80px;
-	color: #efc818;
-	background: #000;
-	font-family: bebas;
-	margin-bottom: 0px;
- 	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.20);
-
  }
 
+ h3#bannerMessage {
+ 	font-family: bebas;
+	padding-left: 160px;
+ 	padding-right: 160px;
+ 	padding-top: 20px;
+	text-align: left;
+	font-size: 80px;
+ }
+
+ h3.about {
+ 	font-family: bebas;
+	width: 100%;
+ 	padding-top: 64px;
+	padding-bottom: 64px;
+ }
+
+ h3.contact {
+ 	font-family: bebas;
+	width: 100%;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+ 	background: #000;
+ }
 
 /* -- MENU --*/
 
@@ -183,7 +234,11 @@ h2 {
   width: auto;
   float: right;
   padding: 32px;
+  margin-right: 2%;
   background-color: #000;
+  -webkit-transition: height 0.5s linear;
+  -moz-transition: height 0.5s linear;
+  transition: height 0.5s linear;
 }
 
 #cssmenu ul {
@@ -194,6 +249,9 @@ h2 {
   display: block;
   zoom: 1;
   vertical-align: middle;
+  -webkit-transition: height 0.5s linear;
+  -moz-transition: height 0.5s linear;
+  transition: height 0.5s linear;
 }
 
 #cssmenu ul:after {
@@ -208,6 +266,9 @@ h2 {
   float: left;
   display: block;
   padding: 0;
+  -webkit-transition: height 0.5s linear;
+  -moz-transition: height 0.5s linear;
+  transition: height 0.5s linear;
 }
 #cssmenu ul li a {
   color: #efc818;
